@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Contact form</title>
+
+
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+  <div class="toast" id="toast">
+  <div class="toast-header">
+    <img src="assets/images/icon-success-check.svg" alt="">
+    <h3>Message Sent!</h3>
+  </div>
+
+  <p>Thanks for completing the form. We'll be in touch soon!</p>
+</div>
+<div class="container">
+  <div class="formcontainer">
+    <h2>Contact Us</h2>
+    <form>
+  <div class="names">
+
+    <div class="field">
+      <label for="fname">First Name <span>*</span></label>
+      <input type="text" id="fname" required>
+    </div>
+
+    <div class="field">
+      <label for="lname">Last Name <span>*</span></label>
+      <input type="text" id="lname" required>
+    </div>
+    
+     
+  </div>
+  <div class="mailfield">
+      <label for="fname">Email Address <span>*</span></label>
+      <input type="email" id="fname" required>
+    </div>
+     <div class="query">
+    <label>Query Type <span>*</span></label>
+
+
+    <div class="options">
+        <label class="option">
+            <input type="radio" name="query" value="general" required>
+            <span>General Enquiry</span>
+        </label>
+
+        <label class="option">
+            <input type="radio" name="query" value="support" >
+            <span>Support Request</span>
+        </label>
+        
+        </div>
+        <div class="message">
+          <p class="mname">Message<span>*</span></p>
+                  <textarea class="mname" name="message" id="message" rows="5" cols="90" ></textarea>
+
+
+    </div>
+    <div class="checkbox">
+          <input type="checkbox" name="check" id="check" required>
+    <span>I consent to being contacted by the team <span>*</span></span>
+
+    </div>
+    <div class="btn">
+       <button value="submit">Submit</button>
+
+    </div>
+   
+
+</div>
+
+</form>
+  </div>
+
+</div>
+ 
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="https://mohammedhussain.netlify.app/">Mohammed hussain Inamdar</a>.
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>
