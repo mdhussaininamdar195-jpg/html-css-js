@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calc-container">
+           <div class="head">
+            <img src="calculator-01-stroke-rounded.svg" alt="">
+            <h2>Calculator</h2>
+
+           </div>
+            
+            <input autofocus type="number" name="number" id="num1" placeholder="Enter First Number">
+            <br>
+            <input autofocus type="number" name="number" id="num2" placeholder="Enter Second Number">
+            <br>
+                <select name="select" id="operation">
+                <option value="">Select Operation</option>
+                <option value="sum">Addition</option>
+                <option value="difference">Subtraction</option>
+                <option value="product">Multiplication</option>
+                <option value="quotient">Quotient</option>
+                <option value="remainder">Modulus</option>
+                <option value="power">Power</option>
+                <option value="square">Square</option>
+                <option value="sqrt">Square Root</option>
+            </select>
+            <br>
+            <button onclick="calculate()">Calculate</button>
+            <div class="display" style="text-align: center;" id="result"></div>
+        </div>
+    </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

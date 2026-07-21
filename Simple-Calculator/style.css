@@ -1,0 +1,143 @@
+*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #F4F6F5;
+        }
+        .container{
+            min-height: 40vh;
+            min-width: 30vw;
+            border: 2px solid #D1DCD6;
+            border-radius: 20px;
+            padding: 10px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #FFFFFF
+          
+           
+        }
+        h2{
+            color: #2C3E35;
+        }
+        input,button{
+            margin: 10px 0;
+            width: 100%;
+            padding: 5px 0;
+            
+        }
+        select,button{
+            width: 100%;
+            padding: 5px;
+           color:  #2C3E35;
+           font-size:12px ;
+      
+        }
+      .head{
+        display: flex;
+        gap: 10px;
+       
+      }
+      input::placeholder{
+        padding: 10px;
+        color: rgb(129, 128, 128);
+      }
+      input,select,button{
+        border-radius: 5px;
+        border: 1.5px solid #D1DCD6;
+        
+       
+      }
+      button{
+        color: #FFFFFF;
+        background-color: #5F8575;
+             font-weight: bold;
+      }
+   input, select, button {
+  transition: all 0.2s ease-in-out;
+}
+button:hover {
+  filter: brightness(0.9);
+  transform: scale(1.02);
+  cursor: pointer;
+}
+.display{
+    width: 100%;
+     border: 1.5px solid #D1DCD6 ;
+     background-color: #334155;
+     color: #F8FAFC;
+     display: none;
+}
+select {
+  background-color: #ffffff; 
+  color: #2c3e35;          
+  border: 1px solid #cbd5e1; 
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+option {
+    background: white;
+    color: #333;
+    padding: 10px;
+}
+@media (max-width: 768px) /* tablet view */ {
+    .container {
+        min-width: 60vw;
+    }
+
+    .calc-container {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .head img {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (max-width: 480px)  /* mobile view */ {
+
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        min-width: 95vw;
+        min-height: auto;
+        padding: 20px 15px;
+    }
+
+    .calc-container {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .head img {
+        width: 24px;
+        height: 24px;
+    }
+
+    input,
+    select,
+    button,
+    .display {
+        font-size: 15px;
+    }
+}
