@@ -1,0 +1,281 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Martel Sans',sans-serif;
+}
+
+body{
+    background:#000;
+    color:#fff;
+}
+
+.main{
+    background:url("assets/img/bg.jpg");
+    background-position:center ;
+    background-attachment: fixed;
+    background-size:cover ;
+    background-repeat: no-repeat;
+    min-height:90vh;
+    position:relative;
+}
+
+.main .box{
+    position:absolute;
+    inset:0;
+    background:#000;
+     opacity:.65;
+}
+
+nav{
+
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:20px 0;
+    position:relative;
+    z-index:2;
+}
+
+nav img{
+    width:160px;
+    max-width:40vw;
+}
+
+.btn{
+    padding:8px 14px;
+    border:1px solid rgba(255,255,255,.5);
+    background:rgba(0,0,0,.4);
+    color:#fff;
+    border-radius:4px;
+    cursor:pointer;
+}
+
+.btn-red,.btn-red-sm{
+    background:#e50914;
+    border:none;
+}
+
+.btn-red{
+    padding:12px 24px;
+    font-size:18px;
+    font-weight:700;
+}
+
+.hero{
+    position:relative;
+    z-index:2;
+    min-height:80vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    gap:20px;
+    padding:20px;
+}
+
+.hero span:nth-child(1){
+    font-size:50px;
+    font-weight:900;
+    max-width:800px;
+}
+
+.hero span:nth-child(2){
+    font-size:1.5rem;
+}
+
+.hero span:nth-child(3){
+    font-size:1.1rem;
+    max-width:700px;
+}
+
+.hero-btn{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero input{
+    width:360px;
+    max-width:90vw;
+    padding:14px;
+    background:rgba(0,0,0,.55);
+    border:1px solid #666;
+    color:#fff;
+    border-radius:4px;
+}
+
+.seperation,.seperation2,.seperation3{
+    height:8px;
+    background:#222;
+}
+
+.first{
+    width:60%;
+    margin:50px auto;
+    display:flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   align-items: center;
+    gap:20px;
+}
+
+.trend{
+    background:#111;
+    border-radius:10px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.trend:hover{
+    transform:translateY(-6px);
+}
+
+.trend img{
+    width:100%;
+    height:270px;
+    object-fit:cover;
+    display:block;
+}
+
+.trend h4{
+    text-align:center;
+    padding:12px;
+}
+
+.faq{
+    width:min(1000px,90%);
+    margin:50px auto;
+}
+
+.faq h2{
+    text-align:center;
+    font-size:2rem;
+    margin-bottom:25px;
+}
+
+.faqbox{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:24px;
+    background:#2d2d2d;
+    margin-bottom:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.faqbox:hover{
+    background:#444;
+}
+
+footer{
+    width:min(1200px,90%);
+    margin:50px auto;
+}
+
+.ques{
+    margin-bottom:25px;
+}
+
+.footer{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.footer-item{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.footer a{
+    color:#fff;
+    font-size:14px;
+    text-decoration:none;
+}
+
+.footer a:hover{
+    text-decoration:underline;
+}
+.parafoot{
+    text-align:center;
+    font-size:20px;
+    margin-top:70px;
+}
+
+@media (max-width:768px){
+
+nav{
+    flex-direction:column;
+    gap:15px;
+}
+
+.hero-btn{
+    flex-direction:column;
+    width:100%;
+}
+
+.hero input,
+.btn-red{
+    width:100%;
+}
+
+.first{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.footer{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.faqbox{
+    padding:18px;
+}
+}
+
+@media (max-width:480px){
+
+nav img{
+    width:120px;
+}
+
+.hero{
+    min-height:75vh;
+}
+
+.hero span:nth-child(2){
+    font-size:1.1rem;
+}
+
+.hero span:nth-child(3){
+    font-size:1rem;
+}
+
+.first{
+    grid-template-columns:1fr;
+}
+
+.trend img{
+    height:320px;
+}
+
+.footer{
+    grid-template-columns:1fr;
+}
+
+.faqbox{
+    font-size:15px;
+    gap:10px;
+}
+
+.btn{
+    font-size:14px;
+}
+}
