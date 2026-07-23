@@ -1,0 +1,102 @@
+*{
+            margin: 0;padding: 0;box-sizing: border-box;
+        }
+        body{
+            background-color: #0F172A;
+            color: #F8FAFC;
+            overflow: hidden;
+        }
+        .container{
+            width: 100vw;
+          height: 100vh;
+           
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+               
+            
+                
+
+
+        }
+        .form{
+            margin: 20px;
+            padding: 10px;
+        }
+        input[type="text"]{
+            padding: 10px;
+            margin: 10px;
+            width: 300px;
+            display: block;
+            background-color: #111827;
+            color: #F8FAFC;
+          
+               }
+              
+              
+        button{
+            padding: 15px;
+            border-radius: 20px;
+            background-color: #6366F1;
+            color: #F8FAFC;
+            border: none;
+        }
+        button:hover{
+            background-color: #7C3AED;
+        }
+        h2{
+           margin-top: 20px;
+            color: #F8FAFC;
+        }
+        h3{
+            color: #94A3B8;
+            margin-top: 10px;
+        }
+        a{
+         
+            text-decoration: none;
+            color: white;
+               font-weight: bolder;
+               font-size: 28px;
+            
+        }
+        p{
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 40px;
+            min-width: 40px;
+            border: 1px solid white;
+         
+            padding: 8px;
+            border-radius: 8px;
+            background-color:#7c3aed;
+            &:hover{
+                background-color:#c3afe2;
+            }
+             }
+        .box{
+            min-height: 50%;
+            width: 40%;
+            border: 2px solid #334155;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+                flex-direction: column;
+                background-color: #1E293B;
+                border-radius: 20px;
+        }
+        @media only screen and (max-width:800px){
+            .box{
+                width: 95%;
+            }
+             input[type="text"]{
+            width: 95%;
+            
+        }
+    }
+       
