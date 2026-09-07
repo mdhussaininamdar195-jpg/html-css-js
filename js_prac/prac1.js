@@ -22,9 +22,10 @@ console.log(arr.reduce((a,b)=>{
 
 
 // //create async function
-async function hussain(){
-    console.log("hussain")
+async function JsAsync(){
+    console.log("hello world")
 }
-await hussain()
-
-
+async function main(){
+    await JsAsync()
+}
+main()
