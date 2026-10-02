@@ -15,7 +15,7 @@ console.log(arr.map(e=>{
      return e*2;
 }))
 
-// // //calculate thier sum using reduce
+// // //calculate their sum using reduce
 console.log(arr.reduce((a,b)=>{
      return a+b;
 }))
