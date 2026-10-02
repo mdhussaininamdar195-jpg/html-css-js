@@ -28,16 +28,31 @@
 //  oddeven()
 
 // 3. Check whether a person is eligible to vote.
- function Adult(){
-    let age=20;
-    if(age>=18){
-        console.log("eligible to Vote")
+//  function Adult(){
+//     let age=20;
+//     if(age>=18){
+//         console.log("eligible to Vote")
+//     }
+//     else if(age<=0){
+//         console.log("invalid age")
+//     }
+//     else{
+//         console.log(" not eligible to Vote")
+//     }
+//  }
+// Adult()
+
+//Find the sum of all odd numbers from 1 to 100.
+function sum(){
+    let sum=0;
+    for(let i=0; i<=100; i++){
+        if(i%2!==0){
+          sum=sum+i;
+        }
+        
     }
-    else if(age<=0){
-        console.log("invalid age")
-    }
-    else{
-        console.log(" not eligible to Vote")
-    }
- }
-Adult()
+    console.log(sum)
+
+
+}
+sum()
