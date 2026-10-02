@@ -16,13 +16,28 @@
 
 
 //2. Check whether a number is even or odd.
- function oddeven(){
-    let num=1;
-    if(num%2===0){
-        console.log(`${num} is even`)
+//  function oddeven(){
+//     let num=1;
+//     if(num%2===0){
+//         console.log(`${num} is even`)
+//     }
+//     else{
+//         console.log(`${num} is odd`)
+//     }
+//  }
+//  oddeven()
+
+// 3. Check whether a person is eligible to vote.
+ function Adult(){
+    let age=20;
+    if(age>=18){
+        console.log("eligible to Vote")
+    }
+    else if(age<=0){
+        console.log("invalid age")
     }
     else{
-        console.log(`${num} is odd`)
+        console.log(" not eligible to Vote")
     }
  }
- oddeven()
+Adult()
